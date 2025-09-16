@@ -1,0 +1,124 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  color: #fff;
+  box-shadow: 0 0 20px #ff00cc;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  text-shadow: 0 0 10px #ff00cc;
+  margin-bottom: 0.5rem;
+}
+
+.watermark-inline {
+  font-size: 0.9rem;
+  color: rgba(0, 255, 255, 0.4);
+  text-shadow: 0 0 5px #00ffff;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.menu h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #ff00cc;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #ff00cc;
+}
+
+.order-button {
+  text-align: center;
+  margin: 2rem;
+}
+
+.order-button a {
+  background: #00ffff;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.order-button a:hover {
+  background: #00ccff;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ccff;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .menu h2 {
+    font-size: 1.4rem;
+  }
+
+  li {
+    font-size: 0.95rem;
+    padding: 0.4rem;
+  }
+
+  .order-button a {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .watermark-inline {
+    font-size: 0.75rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
